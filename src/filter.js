@@ -12,4 +12,13 @@ const filter = (numberList, condition) => {
         return numberList.filter(ele => ele > 1);
     }
 
+    if (condition === "filterUpperCase") {
+        return numberList.filter(toUpperCase);
+    }
+
+    function toUpperCase(element){
+        return element === element.toUpperCase();
+    }
+
 }
+module.exports = filter;

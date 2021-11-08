@@ -17,4 +17,9 @@ describe('filter', () => {
     it('should return array of element grater than two if x>1 filter is applied', () => {
         expect(filter([1,2,3], "x>1")).toEqual([2,3]);
     });
+
+    it('should return array of element containing uppercase if uppercase filter is applied', () => {
+        expect(filter(['A','B','C','D'], "filterUpperCase")).toEqual(['B','D']);
+    });
+    
 })
