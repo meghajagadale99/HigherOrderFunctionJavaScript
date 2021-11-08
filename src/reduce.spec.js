@@ -10,4 +10,8 @@ describe('reduce', () => {
         expect(reduce([5, 5], (x, y) => x + y)).toEqual(10);
     })
 
+    it('should return abc if given array is ["a","b","c"], (x,y) => x+y', () => {
+        expect(reduce(["a","b","c"], (x, y) => x + y)).toEqual('abc');
+    })
+
 })
