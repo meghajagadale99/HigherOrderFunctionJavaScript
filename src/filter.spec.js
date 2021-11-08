@@ -13,4 +13,8 @@ describe('filter', () => {
     it('should return empty array if array is provided with filter as false', () => {
         expect(filter([1,2,3], "false")).toEqual([]);
     });
+
+    it('should return array of element grater than two if x>1 filter is applied', () => {
+        expect(filter([1,2,3], "x>1")).toEqual([2,3]);
+    });
 })
