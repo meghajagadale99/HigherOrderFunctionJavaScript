@@ -9,4 +9,8 @@ describe('filter', () => {
     it('should return same array if array is provided with filter as true', () => {
         expect(filter([1,2,3], "true")).toEqual([1,2,3]);
     });
+
+    it('should return empty array if array is provided with filter as false', () => {
+        expect(filter([1,2,3], "false")).toEqual([]);
+    });
 })
