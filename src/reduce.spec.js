@@ -11,7 +11,11 @@ describe('reduce', () => {
     })
 
     it('should return abc if given array is ["a","b","c"], (x,y) => x+y', () => {
-        expect(reduce(["a","b","c"], (x, y) => x + y)).toEqual('abc');
+        expect(reduce(["a", "b", "c"], (x, y) => x + y)).toEqual('abc');
+    })
+
+    it('should return zabc if given array is ["a","b","c"], (x,y) => x+y,z', () => {
+        expect(reduce(["a", "b", "c"], (x, y) => x + y)).toEqual('zabc');
     })
 
 })
