@@ -1,12 +1,11 @@
-const reduce = (numberList) => {
-
-    if (numberList.length != 0) {
-        return numberList.reduce(sum);
+const reduce = (numberList) =>
+{
+    if (numberList.length != 0){
+        return numberList.reduce(sum)
     }
 
-    function sum(elementOne, elementTwo) {
-        return elementOne + elementTwo;
+    function sum(elementOne,elementTwo) {
+        return elementOne+elementTwo;
     }
 }
-
-module.exports = reduce;
+module.exports=reduce;
