@@ -1,24 +1,8 @@
-const filter = (numberList, condition) => {
-
-    if (condition === "true") {
-        return numberList;
-    }
-    
-    if (condition === "false") {
-        return [];
-    }
-    
-    if (condition === "x>1") {
-        return numberList.filter(ele => ele > 1);
-    }
-
-    if (condition === "filterUpperCase") {
-        return numberList.filter(toUpperCase);
-    }
-
-    function toUpperCase(element){
-        return element === element.toUpperCase();
-    }
-
+const filter = (numberList, func) => {
+   return numberList.filter(func);
 }
-module.exports = filter;
+ const filterUpperCase = (numberList) => {
+   return numberList = filterUpperCase.toUpperCase();
+ }
+
+module.exports = {filter,filterUpperCase};
