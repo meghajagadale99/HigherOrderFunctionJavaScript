@@ -1,10 +1,11 @@
-const map = (numberList, string) => {
-    if (string == "identity") {
+const map = (numberList,func) => {
+    return numberList.map(element => func(element))
+}
+    const identity =(numberList) => {
         return numberList;
     }
-
-    if (string == "cube") {
-        return numberList.map(i => i * i * i)
+    const cube =(element) => {
+        return element*element*element;
     }
-}
-module.exports = map;
+
+    module.exports = { cube, map, identity };
