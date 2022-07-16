@@ -58,3 +58,4 @@ _________________________________
     - e.g. `max([1,2,3,4])` should be `4`
 - min
     - same as above... return `1`
+# HigherOrderFunctionJavaScript
